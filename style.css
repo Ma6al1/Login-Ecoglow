@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --red-bg: #021212;
+    --bg: #ffffff;
+    --bg-oscuro: #046A38; 
+    --bg-hover: #014629; 
+    --font: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--bg);
+    font-family: var(--font);
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    background-image: url(./img/bg.jpg);
+    background-size:  cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg); 
+    border-radius: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 500px;
+    padding: 10px 0px;
+}
+
+form label {
+    padding-bottom:10px;
+}
+
+form input {
+    margin-bottom: 10px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+input:focus {
+    outline: none;
+}
+.container-a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.container-a a {
+    font-size: small;
+    color: var(--red-bg);
+    text-decoration: none;
+}
+
+
+.btn {
+    background-color: var(--bg-oscuro);
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn:hover { 
+    background: var(--bg-hover)
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .login_container { 
+        max-width: 600px;
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+    }
+
+form {
+        color: black;
+        max-width: 600px;
+        width: 100%;
+        height: 100%;
+        padding: 20px 50px;
+        gap: 10px;
+    }
+}
